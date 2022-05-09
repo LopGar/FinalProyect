@@ -58,7 +58,8 @@ export default {
        persona:null,//Creamos un objeto, le ponemos null no las llaves
        personaEdicion:null,//Hacemos una copia del objeto
        isLoading: false,
-       editando:false
+       editando:false,
+       options: ['Fresco y Sabroso', 'La Candelaria', 'Muu Steak', 'Dulce Tentación']
      }
   },
   methods: {
