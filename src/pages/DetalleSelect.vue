@@ -24,8 +24,8 @@
             <p>Email : <input type="text" v-model="personaEdicion.email"></p>
             <br>
             <p>Elección : <!-- <input type="text" v-model="personaEdicion.selres"> -->  <va-select
-          v-model="selres"
-          class= "personaEdicion.selres"
+          v-model="personaEdicion.selres"
+          class= "form-control"
           :options="options"
           placeholder="Seleccione"
           /> </p>
@@ -58,8 +58,7 @@ export default {
        persona:null,//Creamos un objeto, le ponemos null no las llaves
        personaEdicion:null,//Hacemos una copia del objeto
        isLoading: false,
-       editando:false,
-       options: ['Fresco y Sabroso', 'La Candelaria', 'Muu Steak', 'Dulce Tentación']
+       editando:false
      }
   },
   methods: {
