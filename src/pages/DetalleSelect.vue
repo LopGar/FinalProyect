@@ -23,7 +23,12 @@
           <div class="card-text">
             <p>Email : <input type="text" v-model="personaEdicion.email"></p>
             <br>
-            <p>Elección : <input type="text" v-model="personaEdicion.selres"></p>
+            <p>Elección : <!-- <input type="text" v-model="personaEdicion.selres"> -->  <va-select
+          v-model="selres"
+          class= "personaEdicion.selres"
+          :options="options"
+          placeholder="Seleccione"
+          /> </p>
           </div>
         </div>
       </div>
@@ -53,7 +58,8 @@ export default {
        persona:null,//Creamos un objeto, le ponemos null no las llaves
        personaEdicion:null,//Hacemos una copia del objeto
        isLoading: false,
-       editando:false
+       editando:false,
+       options: ['Fresco y Sabroso', 'La Candelaria', 'Muu Steak', 'Dulce Tentación']
      }
   },
   methods: {

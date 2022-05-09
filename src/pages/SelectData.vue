@@ -3,7 +3,7 @@
     <br>
     <br>
     <br>
-    <h2>Tus opciónes más Frecuentes</h2>
+    <h2>Tus opciónes más Frecuentes y Tarjetas de regalo</h2>
     <br>
     <br>
     <!-- Ahora llamaremos a persona.id, que es el id de la BD, y no al store-->
